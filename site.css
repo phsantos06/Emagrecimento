@@ -1,33 +1,103 @@
-img{
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1,h2,h3{
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+    color: #f1f1f1;
+    line-height: 1.7;
+}
+
+/* Container central */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    padding: 60px 0;
     text-align: center;
-    border:solid black 5px;
-    background-color: antiquewhite;
-    padding: 50px 50px 50px 50px;
-    border-radius: 100px;
-    font-size: 35px;
+    color: white;
 }
-p{
-    text-indent: auto;
-    text-align: left;
-    margin: 10px 30px;
-    font-size:20px ;
-    color: aliceblue;
+
+header h1 {
+    font-size: 3rem;
 }
-.primeiro{
-    color: aliceblue;
-    background-color: rgba(35, 34, 34);
+
+.subtitle {
+    font-weight: 300;
+    opacity: 0.9;
 }
-.segundo{
-    color: aliceblue;
-    background-color: rgb(35, 34, 34);
+
+/* Seções */
+section {
+    margin: 60px 0;
 }
-.topo{
-    background-color: rgb(86, 82, 82);
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-left: 5px solid #4CAF50;
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+/* Imagens */
+img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Destaque */
+blockquote {
+    background: #333;
+    padding: 25px;
+    border-left: 5px solid #4CAF50;
+    margin: 30px 0;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
 }
