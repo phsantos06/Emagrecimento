@@ -1,90 +1,249 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Paulo Henrique">
-    <meta name="description" content="Site voltado ao emagrecimento e saúde metabólica">
-    <title>Vida Leve | Tudo sobre Emagrecimento</title>
-
-    <!-- Fonte moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="site.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Paulo Henrique" />
+  <meta name="description" content="Vida Leve: emagrecimento explicado pela ciência — hormônios, déficit calórico, composição corporal e hábitos sustentáveis. Com calculadora de gasto calórico." />
+  <meta name="theme-color" content="#f6f1e7" />
+  <title>Vida Leve | Emagrecimento com ciência e constância</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="read-progress" aria-hidden="true"><span></span></div>
 
-<header>
-    <div class="container">
-        <h1>Vida Leve</h1>
-        <p class="subtitle">Tudo sobre Emagrecimento e Saúde Metabólica</p>
-    </div>
-</header>
+  <header class="top">
+    <a href="#" class="brand" aria-label="Vida Leve — início"><span class="brand__leaf" aria-hidden="true"></span>Vida Leve</a>
+    <nav aria-label="Seções">
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="#ciencia">A ciência</a></li>
+        <li><a href="#hormonios">Hormônios</a></li>
+        <li><a href="#deficit">Déficit</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="#habitos">Hábitos</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="container">
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="kicker">Emagrecimento & saúde metabólica</p>
+        <h1>Emagrecer é <em>biologia</em>,<br />não castigo.</h1>
+        <p class="lead">Entenda o que realmente acontece no seu corpo — hormônios, energia e músculo — e construa um processo que você consegue manter.</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#ciencia">Começar a leitura</a>
+          <a class="btn btn--ghost" href="#calculadora">Calcular meu gasto diário</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>8 min</strong> de leitura</li>
+          <li><strong>3</strong> hormônios-chave</li>
+          <li><strong>1</strong> calculadora prática</li>
+        </ul>
+      </div>
+      <figure class="hero__img reveal">
+        <img src="img/img.jpg" alt="Maçã verde envolta por uma fita métrica sobre uma mesa de madeira" width="1600" height="2400" fetchpriority="high" />
+        <figcaption class="badge">Sem dietas milagrosas.<br />Só o que funciona.</figcaption>
+      </figure>
+    </section>
 
-    <section>
+    <!-- 1. CIÊNCIA -->
+    <section id="ciencia" class="block split">
+      <div class="split__text reveal">
+        <p class="num">01</p>
         <h2>Quando falamos de emagrecimento, você pensa em quê?</h2>
-        <p>
-            Muitas pessoas associam emagrecimento apenas à estética. No entanto,
-            livros como <strong>O Código da Obesidade</strong>, de Jason Fung,
-            mostram que o processo está profundamente ligado aos hormônios,
-            especialmente à insulina.
-        </p>
-
-        <img src="imgquatro.jpg" alt="Imagem sobre emagrecimento">
-
-        <p>
-            Emagrecer não é apenas comer menos, mas reorganizar padrões
-            alimentares, reduzir picos de insulina e permitir que o corpo utilize
-            gordura como fonte de energia.
-        </p>
+        <p>Muitas pessoas associam emagrecimento apenas à estética. No entanto, livros como <cite>O Código da Obesidade</cite>, de Jason Fung, mostram que o processo está profundamente ligado aos hormônios — especialmente à insulina.</p>
+        <p>Emagrecer não é apenas comer menos: é reorganizar padrões alimentares, reduzir picos de insulina e permitir que o corpo use gordura como fonte de energia.</p>
+      </div>
+      <figure class="split__img reveal">
+        <img src="img/imgquatro.jpg" alt="Pessoa medindo a cintura com uma fita métrica rosa" width="1600" height="1067" loading="lazy" />
+      </figure>
     </section>
 
-    <section>
+    <!-- 2. POR QUE DIETAS FALHAM -->
+    <section class="block fail">
+      <div class="block__head reveal">
+        <p class="num">02</p>
         <h2>Por que a maioria das dietas falha?</h2>
-
-        <p>
-            A maioria falha por ser baseada em restrição extrema e não em
-            sustentabilidade. O metabolismo desacelera, hormônios da fome aumentam
-            e o efeito rebote acontece.
-        </p>
-
-        <blockquote>
-            Emagrecimento não é sobre comer menos — é sobre criar um ambiente metabólico favorável.
-        </blockquote>
-
-        <p>
-            Mudanças sustentáveis acontecem quando alteramos identidade e hábitos
-            gradualmente.
-        </p>
+        <p>Porque são construídas sobre restrição extrema, não sobre sustentabilidade. O corpo reage — e a conta chega.</p>
+      </div>
+      <ol class="chain">
+        <li class="reveal"><span>1</span><h3>Restrição extrema</h3><p>Cortes bruscos de calorias e grupos alimentares inteiros.</p></li>
+        <li class="reveal"><span>2</span><h3>Metabolismo desacelera</h3><p>O corpo passa a economizar energia para se proteger.</p></li>
+        <li class="reveal"><span>3</span><h3>Fome aumenta</h3><p>Hormônios da fome sobem e a saciedade demora a chegar.</p></li>
+        <li class="reveal is-bad"><span>4</span><h3>Efeito rebote</h3><p>A dieta é abandonada e o peso volta — muitas vezes maior.</p></li>
+      </ol>
+      <blockquote class="quote reveal">
+        <p>Emagrecimento não é sobre comer menos — é sobre criar um ambiente metabólico favorável.</p>
+      </blockquote>
+      <p class="note reveal">Mudanças sustentáveis acontecem quando alteramos <strong>identidade e hábitos</strong> de forma gradual.</p>
     </section>
 
+    <!-- 3. HORMÔNIOS -->
+    <section id="hormonios" class="block dark">
+      <div class="block__head reveal">
+        <p class="num">03</p>
         <h2>O papel dos hormônios</h2>
+        <p>Fome, saciedade e armazenamento de gordura são, em grande parte, conversas químicas.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <p class="card__tag">Armazenamento</p>
+          <h3>Insulina</h3>
+          <p>Leva a glicose para dentro das células. Picos frequentes favorecem o armazenamento de gordura e dificultam usá-la como energia.</p>
+        </article>
+        <article class="card reveal">
+          <p class="card__tag">Fome</p>
+          <h3>Grelina</h3>
+          <p>Produzida principalmente no estômago, sinaliza fome. Tende a subir com dietas muito restritivas e noites mal dormidas.</p>
+        </article>
+        <article class="card reveal">
+          <p class="card__tag">Saciedade</p>
+          <h3>Leptina</h3>
+          <p>Liberada pelo tecido adiposo, avisa o cérebro que há energia suficiente. Quando o sinal falha, a sensação de fome persiste.</p>
+        </article>
+      </div>
+      <div class="pillars reveal">
+        <img src="img/imgtres.jpg" alt="Pés sobre uma balança analógica rosa" width="1600" height="1068" loading="lazy" />
+        <div>
+          <h3>Três alavancas para o equilíbrio hormonal</h3>
+          <ul class="ticks">
+            <li><strong>Sono adequado</strong> — regula grelina e leptina.</li>
+            <li><strong>Controle do estresse</strong> — cortisol alto estimula apetite e acúmulo abdominal.</li>
+            <li><strong>Musculação</strong> — melhora a sensibilidade à insulina e mantém o metabolismo ativo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            Hormônios como insulina, grelina e leptina influenciam diretamente
-            fome, saciedade e armazenamento de gordura.
-        </p>
+    <!-- 4. DÉFICIT -->
+    <section id="deficit" class="block">
+      <div class="split split--rev">
+        <div class="split__text reveal">
+          <p class="num">04</p>
+          <h2>Déficit calórico e composição corporal</h2>
+          <p>Do ponto de vista fisiológico, o <strong>déficit calórico</strong> é condição necessária para perder peso: o corpo precisa gastar mais energia do que consome para recorrer às reservas de gordura.</p>
+          <p>Mas cortar calorias de forma agressiva pode derrubar o metabolismo, aumentar a fome e consumir músculo. A chave não é comer o mínimo — é estruturar um déficit <em>inteligente e sustentável</em>.</p>
+        </div>
+        <figure class="split__img reveal">
+          <img src="img/imgcinco.jpg" alt="Pessoa medindo a região abdominal com fita métrica" width="1600" height="1067" loading="lazy" />
+        </figure>
+      </div>
 
-        <img src="imgtres.jpg" alt="Imagem sobre saúde hormonal">
+      <div class="compare reveal">
+        <div class="compare__col">
+          <p class="card__tag">O que a balança mostra</p>
+          <h3>Perda de peso</h3>
+          <ul><li>Água</li><li>Músculo</li><li>Gordura</li></ul>
+        </div>
+        <div class="compare__vs" aria-hidden="true">≠</div>
+        <div class="compare__col compare__col--good">
+          <p class="card__tag">O que você quer de verdade</p>
+          <h3>Perda de gordura</h3>
+          <ul><li>Massa magra preservada</li><li>Metabolismo ativo</li><li>Corpo mais definido</li></ul>
+        </div>
+      </div>
+      <p class="note reveal">Proteína adequada e treino de força direcionam o corpo a usar gordura como combustível, minimizando a perda muscular.</p>
+    </section>
 
-        <p>
-            Sono adequado, controle do estresse e musculação ajudam a manter
-            equilíbrio hormonal e acelerar o metabolismo.
-        </p>
-        <h3>Déficit calórico e composição corporal</h3>
-        <p>O déficit calórico é, do ponto de vista fisiológico, condição necessária para que ocorra a perda de peso. Isso significa que o corpo precisa gastar mais energia do que consome ao longo do tempo para utilizar suas reservas como fonte de combustível. Quando há esse desequilíbrio energético de forma controlada, o organismo recorre ao estoque de gordura para suprir a demanda. No entanto, reduzir calorias de maneira agressiva ou desorganizada pode gerar efeitos indesejados, como queda no metabolismo, aumento excessivo da fome e perda de massa muscular. A chave não está apenas em comer menos, mas em estruturar esse déficit de maneira inteligente e sustentável.</p>
-        <img src="imgcinco.jpg" alt="Déficit calórico">
-        <p>Entretanto, perder peso não é sinônimo de melhorar a composição corporal. A balança pode indicar redução numérica, mas parte desse peso pode ser proveniente de água ou músculo, e não exclusivamente de gordura. A preservação da massa magra é fundamental para manter o metabolismo ativo e favorecer um aspecto físico mais definido. Proteínas adequadas na alimentação e estímulo por meio de treinamento de força ajudam a direcionar o corpo a utilizar gordura como principal fonte de energia, minimizando a degradação muscular durante o processo.</p>
-        <blockquote>Emagrecimento não é um evento isolado, nem um desafio que se resolve com soluções rápidas ou fórmulas extremas. Trata-se de um processo biológico e comportamental que envolve equilíbrio energético, regulação hormonal, preservação de massa muscular e construção de hábitos consistentes. Quando se compreende que o corpo responde a estímulos repetidos — alimentação, sono, estresse, movimento — deixa de fazer sentido buscar atalhos e passa a ser evidente a necessidade de estratégia.</blockquote>       
-</main>
+    <!-- 5. CALCULADORA -->
+    <section id="calculadora" class="block calc-wrap">
+      <div class="block__head reveal">
+        <p class="num">05</p>
+        <h2>Quanto seu corpo gasta por dia?</h2>
+        <p>Estimativa pela equação de Mifflin-St Jeor. Use como ponto de partida, não como regra.</p>
+      </div>
 
-<footer>
-    <div class="container">
-        <p>© 2026 Vida Leve | Desenvolvido por Paulo Henrique</p>
-    </div>
-</footer>
+      <div class="calc reveal">
+        <form class="calc__form" id="calc" novalidate>
+          <fieldset class="seg">
+            <legend>Sexo biológico</legend>
+            <label><input type="radio" name="sexo" value="f" checked /><span>Feminino</span></label>
+            <label><input type="radio" name="sexo" value="m" /><span>Masculino</span></label>
+          </fieldset>
+          <div class="row">
+            <label class="field">Idade <span><input type="number" name="idade" inputmode="numeric" min="15" max="90" value="30" required /> anos</span></label>
+            <label class="field">Peso <span><input type="number" name="peso" inputmode="decimal" min="35" max="250" step="0.1" value="70" required /> kg</span></label>
+            <label class="field">Altura <span><input type="number" name="altura" inputmode="numeric" min="130" max="220" value="165" required /> cm</span></label>
+          </div>
+          <label class="field field--full">Nível de atividade
+            <select name="atividade">
+              <option value="1.2">Sedentário — pouco ou nenhum exercício</option>
+              <option value="1.375" selected>Leve — 1 a 3 treinos por semana</option>
+              <option value="1.55">Moderado — 3 a 5 treinos por semana</option>
+              <option value="1.725">Intenso — 6 a 7 treinos por semana</option>
+            </select>
+          </label>
+          <p class="calc__error" role="alert" hidden>Confira os valores: idade 15–90, peso 35–250 kg, altura 130–220 cm.</p>
+        </form>
 
+        <div class="calc__out" aria-live="polite">
+          <div class="stat stat--big"><span>Gasto diário estimado</span><strong><output id="o-tdee">—</output> kcal</strong></div>
+          <div class="stat"><span>Metabolismo basal</span><strong><output id="o-tmb">—</output> kcal</strong></div>
+          <div class="stat stat--accent"><span>Meta com déficit moderado (−20%)</span><strong><output id="o-meta">—</output> kcal</strong></div>
+          <div class="stat"><span>Proteína sugerida (1,6–2,2 g/kg)</span><strong><output id="o-prot">—</output> g/dia</strong></div>
+          <div class="stat"><span>IMC</span><strong><output id="o-imc">—</output></strong><small id="o-imc-label"></small></div>
+          <p class="calc__disclaimer">Valores estimados, para fins educativos. Gestantes, pessoas com doenças metabólicas ou em uso de medicação devem buscar orientação de um nutricionista ou médico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HÁBITOS -->
+    <section id="habitos" class="block">
+      <div class="block__head reveal">
+        <p class="num">06</p>
+        <h2>Seu checklist da semana</h2>
+        <p>Constância vence intensidade. Marque o que você já pratica — fica salvo neste navegador.</p>
+      </div>
+      <div class="habits reveal">
+        <div class="habits__meter"><div class="ring" style="--p:0"><span id="habit-count">0/7</span></div><p id="habit-msg">Comece por um. Só um.</p></div>
+        <ul class="habits__list" id="habits">
+          <li><label><input type="checkbox" value="sono" /><span>Dormir 7 a 9 horas</span></label></li>
+          <li><label><input type="checkbox" value="proteina" /><span>Proteína em todas as refeições principais</span></label></li>
+          <li><label><input type="checkbox" value="forca" /><span>Treino de força 2 a 3 vezes por semana</span></label></li>
+          <li><label><input type="checkbox" value="agua" /><span>Beber água ao longo do dia</span></label></li>
+          <li><label><input type="checkbox" value="ultra" /><span>Reduzir ultraprocessados e açúcar</span></label></li>
+          <li><label><input type="checkbox" value="passos" /><span>Caminhar e se mover mais no dia a dia</span></label></li>
+          <li><label><input type="checkbox" value="estresse" /><span>Um momento de pausa para o estresse</span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. DÚVIDAS -->
+    <section id="duvidas" class="block faq">
+      <div class="block__head reveal">
+        <p class="num">07</p>
+        <h2>Dúvidas frequentes</h2>
+      </div>
+      <div class="faq__list reveal">
+        <details><summary>Preciso cortar carboidrato para emagrecer?</summary><p>Não necessariamente. O que determina a perda de peso é o déficit sustentado. Reduzir carboidratos refinados ajuda a controlar picos de insulina e a fome, mas o melhor plano é aquele que você consegue seguir.</p></details>
+        <details><summary>Quanto peso é saudável perder por semana?</summary><p>Em geral, algo entre 0,5% e 1% do peso corporal por semana é considerado um ritmo seguro, que preserva músculo e reduz o risco de efeito rebote.</p></details>
+        <details><summary>A balança parou. Estou fazendo algo errado?</summary><p>Oscilações de água, sal, ciclo menstrual e ganho de músculo mascaram a perda de gordura. Acompanhe também medidas, fotos e como as roupas vestem — e avalie a tendência de algumas semanas, não um dia.</p></details>
+        <details><summary>Jejum intermitente funciona?</summary><p>Pode ajudar algumas pessoas a organizar a rotina e comer menos, mas não é obrigatório. Se causar compulsão ou muito desconforto, não é a estratégia certa para você.</p></details>
+      </div>
+    </section>
+
+    <!-- FECHAMENTO -->
+    <section class="closing">
+      <blockquote class="reveal">
+        <p>Emagrecimento não é um evento isolado, nem se resolve com fórmulas extremas. É um processo biológico e comportamental — e quando você entende isso, deixa de buscar atalhos e passa a ter <em>estratégia</em>.</p>
+      </blockquote>
+      <a class="btn btn--light reveal" href="#calculadora">Montar minha estratégia</a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p><strong>Vida Leve</strong> — conteúdo educativo. Não substitui acompanhamento médico ou nutricional.</p>
+    <p>© 2026 · Desenvolvido por <a href="https://github.com/phsantos06" rel="noopener">Paulo Henrique</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
